@@ -1,3 +1,5 @@
+const letters = ['d', 'b', 'a', 'c'];
+
 const bubbleSort = array => {
   if (Array.isArray(array) && array.length > 0) {
     for (let n = array.length - 1; n > 0; n--) {
@@ -18,5 +20,7 @@ const bubbleSort = array => {
     return 'This is not a valid array to be sorted!'
   }
 }
+
+bubbleSort(letters)
 
 export default bubbleSort;

@@ -1,3 +1,5 @@
+const letters = ['d', 'b', 'a', 'c'];
+
 const insertionSort = array => {
   if (Array.isArray(array) && array.length > 0) {
     for (let i = 1; i < array.length; i++) {
@@ -13,5 +15,7 @@ const insertionSort = array => {
     return 'This is not a valid array to be sorted!'
   }
 };
+
+insertionSort(letters)
 
 export default insertionSort;

@@ -33,12 +33,12 @@ describe('Bubble Sort', () => {
   });
 
   it('should only accept arrays', () => {
-    var input = {};
-    expect(bubbleSort(input)).to.equal('This is not a valid array to be sorted!');
-    var input = 'string';
-    expect(bubbleSort(input)).to.equal('This is not a valid array to be sorted!');
-    var input = [4, 3, 1, 5, 2];
-    expect(bubbleSort(input)).to.deep.equal([1, 2, 3, 4, 5]);
+    var objInput = {};
+    expect(bubbleSort(objInput)).to.equal('This is not a valid array to be sorted!');
+    var stringInput = 'string';
+    expect(bubbleSort(stringInput)).to.equal('This is not a valid array to be sorted!');
+    var arrayInput = [4, 3, 1, 5, 2];
+    expect(bubbleSort(arrayInput)).to.deep.equal([1, 2, 3, 4, 5]);
   });
 
 })

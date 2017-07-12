@@ -33,13 +33,12 @@ describe('Insertion Sort', () => {
   });
 
   it('should only accept arrays', () => {
-    var input = {};
-    expect(insertionSort(input)).to.equal('This is not a valid array to be sorted!');
-    var input = 'string';
-    expect(insertionSort(input)).to.equal('This is not a valid array to be sorted!');
-    var input = [4, 3, 1, 5, 2];
-    expect(insertionSort(input)).to.deep.equal([1, 2, 3, 4, 5]);
+    var objInput = {};
+    expect(insertionSort(objInput)).to.equal('This is not a valid array to be sorted!');
+    var stringInput = 'string';
+    expect(insertionSort(stringInput)).to.equal('This is not a valid array to be sorted!');
+    var arrayInput = [4, 3, 1, 5, 2];
+    expect(insertionSort(arrayInput)).to.deep.equal([1, 2, 3, 4, 5]);
   });
-
 
 })

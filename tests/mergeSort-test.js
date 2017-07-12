@@ -33,12 +33,12 @@ describe('Merge Sort', () => {
   });
 
   it('should only accept arrays', () => {
-    var input = {};
-    expect(mergeSort(input)).to.equal('This is not a valid array to be sorted!');
-    var input = 'string';
-    expect(mergeSort(input)).to.equal('This is not a valid array to be sorted!');
-    var input = [4, 3, 1, 5, 2];
-    expect(mergeSort(input)).to.deep.equal([1, 2, 3, 4, 5]);
+    var objInput = {};
+    expect(mergeSort(objInput)).to.equal('This is not a valid array to be sorted!');
+    var stringInput = 'string';
+    expect(mergeSort(stringInput)).to.equal('This is not a valid array to be sorted!');
+    var arrayInput = [4, 3, 1, 5, 2];
+    expect(mergeSort(arrayInput)).to.deep.equal([1, 2, 3, 4, 5]);
   });
 
 })

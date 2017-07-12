@@ -1,5 +1,6 @@
 import { expect } from 'chai';
 import bubbleSort from '../scripts/bubbleSort';
+import genRanNum from '../scripts/genRanNum';
 
 describe('Bubble Sort', () => {
   it('should be a function', () => {

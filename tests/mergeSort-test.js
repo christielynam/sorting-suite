@@ -1,5 +1,6 @@
 import { expect } from 'chai';
 import mergeSort from '../scripts/mergeSort';
+import genRanNum from '../scripts/genRanNum';
 
 describe('Merge Sort', () => {
   it('should be a function', () => {

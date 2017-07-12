@@ -1,5 +1,6 @@
 import { expect } from 'chai';
 import insertionSort from '../scripts/insertionSort';
+import genRanNum from '../scripts/genRanNum';
 
 describe('Insertion Sort', () => {
 

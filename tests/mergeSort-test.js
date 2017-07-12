@@ -21,11 +21,10 @@ describe('Merge Sort', () => {
   });
 
   it('should sort large amounts of numbers', () => {
-    var randomArray = genRandNum(140000);
+    var randomArray = genRandNum(145000);
     var sortedArray = [ ...randomArray ].sort( (a, b) => a - b );
     expect(mergeSort(randomArray)).to.be.deep.equal(sortedArray);
   });
-
 
   it('should sort letters', () => {
     var letters = ['d', 'b', 'a', 'c'];
@@ -41,7 +40,5 @@ describe('Merge Sort', () => {
     var input = [4, 3, 1, 5, 2];
     expect(mergeSort(input)).to.deep.equal([1, 2, 3, 4, 5]);
   });
-
-
 
 })

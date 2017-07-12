@@ -20,7 +20,7 @@ describe('Insertion Sort', () => {
     expect(sorted).to.deep.equal([-29, -21, -12, -9, -8, -4]);
   });
 
-  it.skip('should sort large amounts of numbers', () => {
+  it('should sort large amounts of numbers', () => {
     var randomArray = genRandNum(17500);
     var sortedArray = [ ...randomArray ].sort( (a, b) => a - b );
     expect(insertionSort(randomArray)).to.be.deep.equal(sortedArray);

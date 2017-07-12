@@ -1,4 +1,4 @@
-function genRanNum(count) {
+function genRandNum(count) {
   let numArray = [];
   for (let i = 0; i < count; i++) {
     let randomNum = Math.round(Math.random() * 100);
@@ -7,4 +7,4 @@ function genRanNum(count) {
   return numArray;
 }
 
-export default genRanNum;
+export default genRandNum;

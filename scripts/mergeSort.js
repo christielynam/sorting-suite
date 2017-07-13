@@ -5,10 +5,9 @@ const mergeSort = array => {
     if (array.length === 1) {
       return array;
     }
-    let split = Math.floor(array.length/2);
+    let split = Math.floor(array.length / 2);
     let array1 = array.slice(0, split);
     let array2 = array.slice(split);
-
     return merge(mergeSort(array1), mergeSort(array2));
   } else {
     return 'This is not a valid array to be sorted!'
